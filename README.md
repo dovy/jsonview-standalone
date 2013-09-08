@@ -1,5 +1,26 @@
-JSONView
+JSONView-Standalone
 ========
+
+# This is a port of JSONView
+It was made to be a standalone script. All you need to do is pass in an empty tag with id, and proper json will be formatted for the contents if the contents are indeed valid JSON.
+
+Give index.html a try inside /src.
+
+All that's needed is on load, to provide the ID or class of the item like so:
+```
+	window.onload = function() {
+		// On load, run the code on the jsonId div. Pass in any id.
+		// # denotes id, . denotes class
+		jsonView('#jsonId');
+	}
+```
+
+The div will be populated with pretty code.
+
+One note, do not have any other attributes attached to the id. Class, div, etc. It will mess up the data. This is javascript library independent.
+
+-----------
+
 
 [JSONView](http://jsonview.com) is a Firefox extension that helps you view JSON documents in the browser.
 
